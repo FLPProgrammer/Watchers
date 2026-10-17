@@ -17,15 +17,15 @@ import {
     LuLogOut
 } from 'react-icons/lu';
 
-interface NavbarProps {
-    onContentClick: () => void;
-    onHomeClick: () => void;
-}
+import { INavbarProps } from '../../Interfaces/Interfaces';
+
+
 
 export function Navbar({
     onContentClick,
-    onHomeClick
-}: NavbarProps) {
+    onHomeClick,
+    onConfigurationClick,
+}: INavbarProps) {
 
     return (
         <Container>
@@ -49,7 +49,7 @@ export function Navbar({
                     Content
                 </Option>
 
-                <Option>
+                <Option onClick={onConfigurationClick}>
                     Configuration
                 </Option>
 

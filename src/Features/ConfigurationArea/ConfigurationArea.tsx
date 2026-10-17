@@ -8,6 +8,8 @@ export function ConfigurationArea() {
     return (
         <Container>
             <EmailCard />
+            <PhoneCard />
+            <ProfileCard />
         </Container>
     )
 }
