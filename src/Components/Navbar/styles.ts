@@ -225,3 +225,73 @@ export const OtherOptions = styled.div`
         }
     }
 `;
+
+
+
+export const WelcomeText = styled.span`
+    color: #bdbdbd;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+
+    @media (max-width: 760px) {
+        display: none;
+    }
+`;
+
+export const ProfileButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    padding: 0;
+
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease;
+
+    &:hover {
+        border-color: #e50914;
+        transform: scale(1.05);
+    }
+
+    &:focus-visible {
+        outline: 2px solid #e50914;
+        outline-offset: 3px;
+    }
+`;
+
+export const ProfileImage = styled(Image)`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+`;
+
+export const ProfilePlaceholder = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: #252525;
+    color: #bdbdbd;
+
+    svg {
+        width: 23px;
+        height: 23px;
+        padding: 0;
+    }
+`;

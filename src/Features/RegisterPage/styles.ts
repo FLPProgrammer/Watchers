@@ -142,6 +142,8 @@ export const PasswordBox = styled.div`
 export const SignInBox = styled.div`
     display: flex;
     flex-direction: column;
+    gap: 20px;
+ 
 
     strong {
         color: #fff;
